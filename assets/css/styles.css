@@ -426,7 +426,9 @@ footer {
     height: 25.5rem;
     width: 18rem;
   }
-
+  .skills {
+    margin-top: 160px;
+  }
   .bio {
     margin-top: 30px;
     width: 18.3rem;
