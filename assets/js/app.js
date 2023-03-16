@@ -29,3 +29,13 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+//view resume
+const element = document.getElementById("resume");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  window.open("./assets/Owaise-Zarger-Resume.pdf", "_blank");
+}
+
+//github calender

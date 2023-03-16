@@ -31,13 +31,24 @@
 
   <body>
     <!-- Navbar -->
+    <div id="scroll-up"></div>
     <nav>
       <h1>Owaise Zarger</h1>
       <ul class="navigation">
+        <li><a href="#scroll-up" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a
+            href="./assets/Owaise-Zarger-Resume.pdf"
+            download="Owaise-Zarger-Resume"
+            class="nav-link"
+            id="resume"
+            >Resume</a
+          >
+        </li>
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -48,6 +59,7 @@
     <!-- <p>0024</p> -->
 
     <!-- Hero Section -->
+
     <section class="hero" id="about">
       <img
         src="assets/images/newProfPicGray.jpg"
@@ -68,7 +80,8 @@
     </section>
 
     <!-- Skills section -->
-    <section class="skills" id="skills">
+    <div id="skills"></div>
+    <section class="skills">
       <h2 class="skill-header">My Top Skills</h2>
 
       <div class="skills-wrapper">
@@ -91,6 +104,18 @@
             loading="lazy"
             class="icon icon-card"
           />
+          <img
+            src="assets/icons/redux-icon.webp"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
         </div>
 
         <div class="second-set animate__animated animate__pulse">
@@ -100,14 +125,33 @@
             loading="lazy"
             class="icon icon-card"
           /> -->
+
           <img
-            src="assets/icons/icons8-react-native.svg"
+            src="assets/icons/icon-vs-code.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/GitHub-Mark.png"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
           <img
             src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icon-npm.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icon-chakra.jpeg"
             alt=""
             loading="lazy"
             class="icon icon-card"
@@ -120,79 +164,127 @@
     <section class="more-about">
       <h2>More About Me</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        I am Owaise Zarger. I come from a small place Latur in Maharashtra and I am currently living in Pune. 
+I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb Ambedkar Marathwada University, Aurangabad.
+      <p>
+        After graduation, I started teaching BSc students in a college. I taught subjects like operating systems, software engineering, HTML, and CSS. I worked there for 2 years and then joined Mphasis as a technical support engineer, where I worked for alight process and resolved issues through calls and email.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
+        While working in Mphasis I came across Masai school, which offers 30 weeks of full-time full-stack web development course, where I learned frontend and backend technologies.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
+      <p>I like reading spiritual, philosophical, and self-help books. I am a big fan of combat sports, I follow mixed martial arts fights keenly.</p>
     </section>
 
     <!-- Projects section -->
-    <section class="projects" id="projects">
+    <div id="projects"></div>
+    <section class="projects">
       <h2 class="projects-title">Some of my Recent Projects</h2>
       <div class="projects-container">
         <div class="project-container project-card">
           <img
-            src="assets/images/project.jpeg"
+            src="assets/images/amazon.png"
             alt="expense-tracker"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Project 1</h3>
+          <h3 class="project-title">Shopbag - Amazon Clone</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            Shopbag or amazon is an online shopping Platform. one of the biggest e-commerce website
+            <br />
+            - Tech Stack: React | Redux | Chakra | firebase <br />
+            - Features: Login | Sign-up | Working Carousel Sorting | UI | Filtering <br />
+            - Areas of responsibility:
+            <br />
+            - Implemented the Carousel <br />
+            - Designed Fashion's Page
+            <br />
+            - - A collaborative project built by a team of 5 executed in 5 days.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </p>
+          <a
+            href="https://steady-swan-05d49a.netlify.app/"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/project.jpeg"
+            src="assets/images/mytheresa.png"
             alt="netflic-clone"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Project 2</h3>
+          <h3 class="project-title">Mytheresa Clone</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            Mytheresa is an online shopping destination for luxury fashion and
+            lifestyle design.
+            <br />
+            - Tech Stack: HTML | CSS | JavaScript. <br />
+            - Features: Login | Sign-up | Working Carousel Sorting <br />
+            - Areas of responsibility:
+            <br />
+            - Implemented the Carousel <br />
+            - Designed Men's Page
+            <br />
+            - - A collaborative project built by a team of 5 executed in 5 days.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a
+            href="https://moonlit-salmiakki-6e9d34.netlify.app/"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/project.jpeg"
+            src="assets/images/bigbasket.png"
             alt="greeny-earth"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Project 3</h3>
+          <h3 class="project-title">Big-Basket Clone</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            An online supermarket for all your grocery needs.
+            <br />
+            - Designed the Navbar <br />
+            - Created the Footer <br />
+            - Developed the Carousel<br />
+            - Implemented login/ sign-up functionalities <br />
+            - Tech Stack: HTML |CSS | JavaScript.<br />
+            - Features: Login | Sign-up | Working Carousel
+            <br />
+            - Areas of Responsibility: - An individual project executed in 5
+            days
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a
+            href="https://shiny-puffpuff-e902a7.netlify.app/"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
         </div>
       </div>
     </section>
 
+    <!-- github calendar -->
+    <div class="calendar">
+      <h1>Github calendar</h1>
+      <!-- Loading stuff -->
+
+      <img
+        src="https://ghchart.rshah.org/owaisezarger"
+        alt="2016rshah's Github chart"
+      />
+    </div>
+
     <!-- Contact section -->
-    <section class="contact" id="contact">
+    <div id="contact"></div>
+    <section class="contact">
       <h2>Get In Touch With Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
+          <form action="https://formspree.io/f/mdovdjba" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -240,28 +332,28 @@
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="#" target="_blank"
+      <a href="https://twitter.com/zarger_owais" target="_blank"
         ><img
           src="assets/icons/icons8-twitter-circled.gif"
           alt="Twitter"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
+      <a href="https://www.instagram.com/zargerowais7/" target="_blank"
         ><img
           src="assets/icons/icons8-instagram.gif"
           alt="Instagram"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
+      <a href="https://www.linkedin.com/in/owaisezarger/" target="_blank"
         ><img
           src="assets/icons/icons8-linkedin-circled.gif"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
+      <a href="https://github.com/owaisezarger" target="_blank"
         ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
       /></a>
     </div>
@@ -298,4 +390,5 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 </html>

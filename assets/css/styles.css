@@ -112,12 +112,14 @@ nav ul li {
 }
 
 .hero img {
+  margin-top: 50px;
   padding: 30px;
   height: 22rem;
   width: 17rem;
 }
 
 .bio {
+  margin-top: 50px;
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
@@ -152,11 +154,12 @@ nav ul li {
 /* More about ends */
 
 /* Skills section */
+
 .skills {
   max-width: 68.75rem;
   margin: auto;
+  margin-top: 3rem;
   text-align: center;
-  margin-top: 2.5rem;
 }
 
 .skill-header {
@@ -177,12 +180,12 @@ nav ul li {
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 95%;
+  height: 90%;
 }
 
 .projects-container {
@@ -212,13 +215,19 @@ nav ul li {
 
 .project-details {
   margin-bottom: var(--bottom-margin);
+  text-align: left;
 }
 
 /* Projects section ends */
 
+/* github calendar */
+.calendar {
+  text-align: center;
+}
+
 /* Contacts section */
 .contact {
-  margin-top: 2rem;
+  margin-top: 4.8rem;
 }
 
 .contact h2 {
@@ -376,7 +385,7 @@ footer {
   }
 
   .bio {
-    margin-top: -7rem;
+    margin: -6rem;
     width: 20.5rem;
   }
 
