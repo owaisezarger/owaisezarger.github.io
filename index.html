@@ -32,20 +32,21 @@
   <body>
     <!-- Navbar -->
     <div id="scroll-up"></div>
-    <nav>
-      <h1>Owaise Zarger</h1>
+    <nav  id="nav-menu">
+      <h1 id="user-detail-name">Owaise Zarger</h1>
       <ul class="navigation">
-        <li><a href="#scroll-up" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#scroll-up"  class="nav-link home">Home</a></li>
+        <li><a href="#about"  class="nav-link about">About</a></li>
+        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects">Projects</a></li>
+        <li><a href="#contact"  class="nav-link contact">Contact</a></li>
         <li>
           <a
+          id="resume-link-1"
             href="./assets/Owaise-Zarger-Resume.pdf"
             download="Owaise-Zarger-Resume"
-            class="nav-link"
-            id="resume"
+            class="nav-link nav-link resume"
+            id="resume-button-1"
             >Resume</a
           >
         </li>
@@ -60,15 +61,15 @@
 
     <!-- Hero Section -->
 
-    <section class="hero" id="about">
+    <section class="hero" id="about" id="home">
       <img
         src="assets/images/newProfPicGray.jpg"
         alt="jane-doe"
         loading="lazy"
-        class="hero-img"
+        class="hero-img home-img"
       />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
+      <div class="bio animate__animated animate__shakeX about section"  id="about" >
+        <h2 class="bio-title" id="user-detail-intro">About Me</h2>
         <p class="bio-text">
           Ambitious and Adaptable aspiring full-stack web developer with a
           constructive mindset. with hands-on experience in building websites
@@ -84,41 +85,45 @@
     <section class="skills">
       <h2 class="skill-header">My Top Skills</h2>
 
-      <div class="skills-wrapper">
+      <div class="skills-wrapper skills-card" >
         <div class="first-set animate__animated animate__pulse">
           <img
             src="assets/icons/icons8-html-5.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+         
             src="assets/icons/icons8-css3.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+        
             src="assets/icons/icons8-javascript.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+          
             src="assets/icons/redux-icon.webp"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+          
             src="assets/icons/icons8-react-native.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
         </div>
 
-        <div class="second-set animate__animated animate__pulse">
+        <div class="second-set animate__animated animate__pulse" class="skills-card" >
           <!-- <img
             src="assets/icons/icons8-bootstrap.svg"
             alt=""
@@ -127,34 +132,39 @@
           /> -->
 
           <img
+          
             src="assets/icons/icon-vs-code.png"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+          
             src="assets/icons/GitHub-Mark.png"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+         
             src="assets/icons/icons8-git.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+         
             src="assets/icons/icon-npm.png"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
           <img
+          
             src="assets/icons/icon-chakra.jpeg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="icon icon-card skills-card-img skills-card-name"
           />
         </div>
       </div>
@@ -180,7 +190,7 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
     <section class="projects">
       <h2 class="projects-title">Some of my Recent Projects</h2>
       <div class="projects-container">
-        <div class="project-container project-card">
+        <div class="project-container project-card" class="project-card">
           <img
             src="assets/images/amazon.png"
             alt="expense-tracker"
@@ -188,10 +198,10 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
             class="project-pic"
           />
           <h3 class="project-title">Shopbag - Amazon Clone</h3>
-          <p class="project-details">
+          <p class="project-details"  class="project-description">
             Shopbag or amazon is an online shopping Platform. one of the biggest e-commerce website
             <br />
-            - Tech Stack: React | Redux | Chakra | firebase <br />
+            <p class="project-tech-stack">- Tech Stack: React | Redux | Chakra | firebase</p> <br />
             - Features: Login | Sign-up | Working Carousel Sorting | UI | Filtering <br />
             - Areas of responsibility:
             <br />
@@ -205,12 +215,13 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
             href="https://steady-swan-05d49a.netlify.app/"
             target="_blank"
             class="project-link"
+            class="project-deployed-link"
             >Check it Out</a
           >
           <br>
-          <a href="https://github.com/ramNgithub/amazon.in-Clone/tree/main/amazon-in" target="_blank">Github</a>
+          <a class="project-github-link" href="https://github.com/ramNgithub/amazon.in-Clone/tree/main/amazon-in" target="_blank">Github</a>
         </div>
-        <div class="project-container project-card">
+        <div class="project-container project-card" class="project-card">
           <img
             src="assets/images/mytheresa.png"
             alt="netflic-clone"
@@ -218,11 +229,11 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
             class="project-pic"
           />
           <h3 class="project-title">Mytheresa Clone</h3>
-          <p class="project-details">
+          <p class="project-details"  class="project-description">
             Mytheresa is an online shopping destination for luxury fashion and
             lifestyle design.
             <br />
-            - Tech Stack: HTML | CSS | JavaScript. <br />
+            <p class="project-tech-stack">- Tech Stack: HTML | CSS | JavaScript. </p><br />
             - Features: Login | Sign-up | Working Carousel Sorting <br />
             - Areas of responsibility:
             <br />
@@ -235,12 +246,13 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
             href="https://moonlit-salmiakki-6e9d34.netlify.app/"
             target="_blank"
             class="project-link"
+            class="project-deployed-link"
             >Check it Out</a
           >
           <br>
-          <a href="https://github.com/Manishvsonawane/purring-recess-1554" target="_blank">Github</a>
+          <a class="project-github-link" href="https://github.com/Manishvsonawane/purring-recess-1554" target="_blank">Github</a>
         </div>
-        <div class="project-container project-card">
+        <div class="project-container project-card" class="project-card">
           <img
             src="assets/images/bigbasket.png"
             alt="greeny-earth"
@@ -248,14 +260,14 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
             class="project-pic"
           />
           <h3 class="project-title">Big-Basket Clone</h3>
-          <p class="project-details">
+          <p class="project-details"  class="project-description">
             An online supermarket for all your grocery needs.
             <br />
             - Designed the Navbar <br />
             - Created the Footer <br />
             - Developed the Carousel<br />
             - Implemented login/ sign-up functionalities <br />
-            - Tech Stack: HTML |CSS | JavaScript.<br />
+            <p class="project-tech-stack">- Tech Stack: HTML |CSS | JavaScript.</p><br />
             - Features: Login | Sign-up | Working Carousel
             <br />
             - Areas of Responsibility: - An individual project executed in 5
@@ -265,20 +277,22 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
             href="https://shiny-puffpuff-e902a7.netlify.app/"
             target="_blank"
             class="project-link"
+            class="project-deployed-link"
             >Check it Out</a>
           <br>
-          <a href="https://github.com/owaisezarger/hunky-advertisement-4799" target="_blank">Github</a>
+          <a class="project-github-link" href="https://github.com/owaisezarger/hunky-advertisement-4799" target="_blank">Github</a>
           
         </div>
       </div>
     </section>
 
     <!-- github calendar -->
-    <div class="calendar">
+    <div class="calendar react-activity-calendar">
       <h1>Github calendar</h1>
       <!-- Loading stuff -->
 
       <img
+      id="github-streak-stats"
         src="https://ghchart.rshah.org/owaisezarger"
         alt="2016rshah's Github chart"
       />
@@ -338,7 +352,7 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="https://twitter.com/zarger_owais" target="_blank"
+      <a href="https://twitter.com/zarger_owais" target="_blank" 
         ><img
           src="assets/icons/icons8-twitter-circled.gif"
           alt="Twitter"
@@ -352,25 +366,25 @@ I graduated in B.Tech Computer science engineering in 2019 from MIT, Babasaheb A
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="https://www.linkedin.com/in/owaisezarger/" target="_blank"
+      <a href="https://www.linkedin.com/in/owaisezarger/" target="_blank" id="contact-linkedin"
         ><img
           src="assets/icons/icons8-linkedin-circled.gif"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="https://github.com/owaisezarger" target="_blank"
+      <a href="https://github.com/owaisezarger" target="_blank"  id="contact-github"
         ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
       /></a>
     </div>
 
     <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
+    <!-- <i class="scroll-up" id="scroll-up"
       ><img
         src="assets/icons/icons8-upward-arrow.gif"
         class="socicon up-arrow"
         alt=""
-    /></i>
+    /></i> -->
 
     <!-- Footer section -->
     <footer>
