@@ -31,7 +31,7 @@ scrollUp.addEventListener("click", () => {
 });
 
 //view resume
-const element = document.getElementById("resume");
+const element = document.getElementById("resume-button-1");
 element.addEventListener("click", myFunction);
 
 function myFunction() {
