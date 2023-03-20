@@ -288,6 +288,9 @@ nav ul li {
   cursor: pointer;
 }
 /* Contacts section ends */
+#personalcontact {
+  text-align: center;
+}
 
 /* Social buttons */
 .socials {
