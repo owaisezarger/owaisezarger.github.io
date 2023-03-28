@@ -447,7 +447,13 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
-  .calendar {
+  #github-streak-stats {
     max-width: 17.75rem;
+  }
+  #github-stats-card {
+    max-width: 17.75rem;
+  }
+  .calendar img {
+    width: 80%;
   }
 }
