@@ -165,6 +165,9 @@ nav ul li {
 .skill-header {
   margin-bottom: 1rem;
 }
+/* .skills-wrapper {
+  display: flex;
+} */
 
 .skills-wrapper img {
   padding: 1.25rem;

@@ -42,4 +42,3 @@ function myFunction() {
 }
 
 //github calender
-// [![GitHub Streak]()](https://git.io/streak-stats)
