@@ -447,4 +447,7 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+  .calendar {
+    max-width: 17.75rem;
+  }
 }
