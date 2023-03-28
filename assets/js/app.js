@@ -31,11 +31,15 @@ scrollUp.addEventListener("click", () => {
 });
 
 //view resume
-const element = document.getElementById("resume-button-1");
+const element = document.getElementById("resume-link-1");
 element.addEventListener("click", myFunction);
+
+const element2 = document.getElementById("resume-link-2");
+element2.addEventListener("click", myFunction);
 
 function myFunction() {
   window.open("./assets/Owaise-Zarger-Resume.pdf", "_blank");
 }
 
 //github calender
+// [![GitHub Streak]()](https://git.io/streak-stats)
