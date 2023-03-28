@@ -453,6 +453,9 @@ footer {
   #github-stats-card {
     max-width: 17.75rem;
   }
+  #github-top-langs {
+    max-width: 17.75rem;
+  }
   .calendar img {
     width: 80%;
   }
