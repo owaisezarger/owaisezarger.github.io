@@ -102,11 +102,19 @@ nav ul li {
 /* Navbar ends */
 
 /* Hero section */
+.about section {
+  margin-top: 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+#about {
+  padding-left: 20px;
+}
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 9.5rem;
+  gap: 4rem;
   max-width: 68.75rem;
   margin: auto;
 }
@@ -132,7 +140,16 @@ nav ul li {
 
 .bio p {
   line-height: var(--line-height);
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
+}
+
+#user-detail-intro {
+  padding-right: 30px;
+}
+.btnabout {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 5px;
+  border-radius: 10px;
 }
 /* Hero section ends */
 
@@ -170,12 +187,14 @@ nav ul li {
 }
 
 .one {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
 }
 .two {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
 }
 
 .skills-wrapper img {
@@ -209,6 +228,7 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 1px solid red; */
 }
 
 .projects-title {
@@ -216,11 +236,12 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-.project-container {
+/* .project-container {
   text-align: left;
   width: 21.875rem;
   padding: 1rem;
-}
+  border: 1px solid blue;
+} */
 
 .project-container p {
   padding: 0.4rem;
@@ -240,6 +261,9 @@ nav ul li {
 /* github calendar */
 .calendar {
   text-align: center;
+}
+#github-top-langs {
+  height: 28.5vh;
 }
 
 /* Contacts section */
@@ -353,16 +377,21 @@ footer {
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
-  width: calc(50% - 15px);
+  /* width: calc(50% - 15px); */
   margin-bottom: 30px;
 }
 
 .project-card {
+  height: 300px;
+  overflow: scroll;
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  text-align: left;
+  width: 21.875rem;
+  padding: 1rem;
 }
 
 /* Media queries for responsiveness */
@@ -427,23 +456,18 @@ footer {
     width: 5.875rem;
     height: 5.25rem;
   }
-
-  .one {
-    flex-wrap: wrap;
+  .skills-wrapper {
     justify-content: center;
+  }
+  .one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
   .two {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .skills-card {
-    width: calc(50% - 15px);
-    margin-bottom: 30px;
-  }
-
-  .skills-card:nth-child(odd) {
-    clear: both;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
   .projects-container {
@@ -471,6 +495,7 @@ footer {
   .bio {
     margin-top: 30px;
     width: 18.3rem;
+    justify-content: center;
   }
 
   .project-container {
@@ -479,6 +504,20 @@ footer {
 
   .contact-form-container {
     max-width: 17.75rem;
+  }
+
+  .skills-wrapper {
+    justify-content: center;
+  }
+  .one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   #github-streak-stats {
     max-width: 17.75rem;
