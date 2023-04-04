@@ -165,12 +165,24 @@ nav ul li {
 .skill-header {
   margin-bottom: 1rem;
 }
-/* .skills-wrapper {
+.skills-wrapper {
   display: flex;
-} */
+}
+
+.one {
+  display: flex;
+}
+.two {
+  display: flex;
+}
 
 .skills-wrapper img {
   padding: 1.25rem;
+}
+
+.skills-card-img {
+  width: 7.875rem;
+  height: 7.25rem;
 }
 
 .icon {
@@ -334,7 +346,7 @@ footer {
 /* Footer section ends */
 
 /* General (utilities) */
-.icon-card {
+.skills-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
