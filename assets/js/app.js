@@ -30,14 +30,7 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-//view resume
-const element = document.getElementById("resume-link-1");
-element.addEventListener("click", myFunction);
-
-const element2 = document.getElementById("resume-link-2");
-element2.addEventListener("click", myFunction);
-
-function myFunction() {
+function newFunction() {
   window.open("./assets/Owaise-Zarger-Resume.pdf", "_blank");
 }
 
