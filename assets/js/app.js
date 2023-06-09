@@ -31,7 +31,8 @@ scrollUp.addEventListener("click", () => {
 });
 
 function newFunction() {
-  window.open("./assets/Owaise-Zarger-Resume.pdf", "_blank");
+  var resume = "./assets/Owaise-Zarger-Resume.pdf";
+  window.open(resume, "_blank");
 }
 
 //github calender
